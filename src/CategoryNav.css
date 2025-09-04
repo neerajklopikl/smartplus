@@ -1,0 +1,107 @@
+/* src/CategoryNav.css */
+.category-nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the top */
+  padding: 10px 50px;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,.16);
+  background-color: #fff;
+  gap: 30px;
+  overflow-x: auto;
+  font-family: Arial, sans-serif;
+}
+
+.category-item-wrapper {
+  padding-bottom: 10px; /* Space for the menu to not close immediately */
+}
+
+.category-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.category-image {
+  width: 64px;
+  height: 64px;
+}
+
+.category-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: color 0.2s ease;
+}
+
+.category-name.active {
+  color: #2874f0; /* Blue color on hover */
+}
+
+.arrow-icon {
+  transition: transform 0.2s ease-in-out;
+}
+
+.arrow-icon.up {
+  transform: rotate(180deg);
+}
+
+/* Mega Menu Styling */
+.mega-menu {
+  position: absolute;
+  top: 155px; /* Adjust this value based on your Navbar's height */
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-width: 1000px;
+  display: flex;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 100;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+}
+
+.menu-column, .menu-l3-column {
+  padding: 10px;
+  min-width: 220px;
+}
+
+.menu-l2-item {
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-l2-item.active-l2 {
+  background-color: #f0f5ff;
+  font-weight: 600;
+}
+
+.arrow-forward-icon {
+  color: #878787;
+}
+
+.menu-l3-column {
+  background-color: #f0f5ff;
+}
+
+.menu-l3-item {
+  display: block;
+  padding: 8px 15px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #333;
+}
+
+.menu-l3-item:hover {
+  font-weight: 600;
+}

@@ -1,0 +1,172 @@
+/* src/ProductListing.css */
+
+.listing-page-container {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  background-color: #f1f3f6;
+  font-family: Arial, sans-serif;
+}
+
+/* New style for the link wrapper */
+.product-listing-link {
+  text-decoration: none;
+  color: inherit;
+  display: contents; /* Makes the link take the layout of its children */
+}
+
+
+/* Filter Sidebar */
+.filter-sidebar {
+  width: 280px;
+  background-color: #fff;
+  padding: 15px;
+  height: fit-content;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+.filter-sidebar h3 {
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.filter-section h4 {
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.price-slider-container {
+  padding: 0 10px;
+}
+
+.price-range-display {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* rc-slider overrides for custom styling */
+.rc-slider-track {
+  background-color: #2874f0;
+}
+.rc-slider-handle {
+  border-color: #2874f0;
+  box-shadow: 0 0 5px #2874f0;
+}
+
+
+/* Product Grid */
+.product-grid-container {
+  flex: 1;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+.product-grid-header {
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.listing-product-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 10px;
+  transition: box-shadow 0.2s ease;
+  height: 100%; /* Ensure cards in a row have the same height */
+  display: flex;
+  flex-direction: column;
+}
+
+
+.listing-product-card:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.listing-product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.listing-product-name {
+  font-size: 14px;
+  line-height: 1.4;
+  height: 3.8em; /* Limit to 2-3 lines */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 8px;
+  flex-grow: 1; /* Allow name to take up available space */
+}
+
+.product-rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.rating-badge {
+  background-color: #388e3c;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-weight: 500;
+}
+
+.reviews-count {
+  color: #878787;
+  font-weight: 500;
+}
+
+.product-price-section {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+}
+
+.current-price {
+  font-weight: 600;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #878787;
+  font-size: 14px;
+}
+
+.discount {
+  color: #388e3c;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.sort-option {
+  font-size: 14px;
+  padding: 8px 0;
+  cursor: pointer;
+  color: #333;
+}
+
+.sort-option.active {
+  color: #2874f0; /* Flipkart blue */
+  font-weight: 600;
+}

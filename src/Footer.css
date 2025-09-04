@@ -1,0 +1,107 @@
+/* src/Footer.css */
+
+.footer-container {
+  padding: 40px 60px;
+  color: #2b3036;
+  font-family: Arial, sans-serif;
+  /* The specific background you requested */
+  background: linear-gradient(270deg, rgba(251, 255, 246, 0.20) 0.45%, rgba(255, 255, 255, 0.00) 194.45%), linear-gradient(1deg, rgba(171, 254, 214, 0.20) 15.19%, rgba(228, 254, 186, 0.20) 76.1%, rgba(255, 255, 255, 0.20) 105.61%);
+}
+
+.footer-top {
+  margin-bottom: 30px;
+}
+
+.footer-logo {
+  /* The logo provided is white, so we need to invert it for a light background */
+  filter: invert(1);
+  width: 100px;
+}
+
+.footer-tagline {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-column h4 {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column li {
+  margin-bottom: 12px;
+}
+
+.footer-column a {
+  text-decoration: none;
+  color: #2b3036;
+  font-size: 14px;
+  transition: color 0.2s ease;
+}
+
+.footer-column a:hover {
+  color: #2874f0;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: #2b3036;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 18px;
+  transition: background-color 0.2s ease;
+}
+
+.social-icons a:hover {
+  background-color: #2874f0;
+}
+
+.app-stores {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.app-stores img {
+  filter: invert(1);
+  height: 40px;
+}
+
+.global-links {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}

@@ -1,0 +1,262 @@
+.product-detail-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+/* Left Section: Images and Buttons */
+.product-image-section {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-basis: 45%;
+    gap: 15px;
+}
+
+.main-image-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-product-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border: 1px solid #f0f0f0;
+    border-radius: 4px;
+    object-fit: contain;
+}
+
+.thumbnails {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.thumbnail-item {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #e0e0e0;
+    border-radius: 4px;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thumbnail-item:hover, .thumbnail-item.active {
+    border-color: #2874f0;
+}
+
+.thumbnail-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+.quantity-selector button {
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 12px;
+    font-size: 16px;
+}
+
+.quantity-selector span {
+    padding: 10px 15px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    font-weight: 500;
+}
+
+.btn-add-to-cart, .btn-buy-now {
+    flex: 1;
+    border: none;
+    padding: 18px 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.btn-add-to-cart {
+    background-color: #ff9f00;
+    color: white;
+}
+
+.btn-buy-now {
+    background-color: #fb641b;
+    color: white;
+}
+
+/* Right Section: Product Info */
+.product-info-section {
+    flex-basis: 55%;
+    display: flex;
+    flex-direction: column;
+}
+
+.breadcrumbs {
+    font-size: 12px;
+    color: #878787;
+    margin-bottom: 10px;
+}
+
+.product-detail-name {
+    font-size: 18px;
+    font-weight: 400;
+    color: #212121;
+    margin-bottom: 10px;
+}
+
+.product-rating-detail {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    color: #878787;
+    font-weight: 500;
+}
+
+.rating-badge-detail {
+    background-color: #388e3c;
+    color: #fff;
+    padding: 2px 7px;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.price-section-detail {
+    display: flex;
+    align-items: baseline;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.current-price-detail {
+    font-size: 28px;
+    font-weight: 600;
+    color: #212121;
+}
+
+.original-price-detail {
+    text-decoration: line-through;
+    color: #878787;
+    font-size: 16px;
+}
+
+.discount-detail {
+    color: #388e3c;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.available-offers {
+    margin: 20px 0;
+}
+
+.available-offers h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.available-offers p {
+    font-size: 14px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #212121;
+}
+
+.available-offers svg {
+    color: #388e3c;
+}
+
+.available-offers a {
+    color: #2874f0;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.details-row, .highlights-section, .seller-info {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 40px;
+}
+
+.detail-label {
+    color: #878787;
+    font-size: 14px;
+    font-weight: 600;
+    width: 100px;
+}
+
+.detail-value {
+    font-size: 14px;
+    color: #212121;
+}
+
+.pincode-checker {
+    display: flex;
+    border-bottom: 2px solid #2874f0;
+}
+
+.pincode-checker input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.pincode-checker button {
+    border: none;
+    background: none;
+    color: #2874f0;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.highlights-section {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.highlights-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.highlights-section li {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #212121;
+}
+
+.seller-name {
+    color: #2874f0;
+    font-size: 14px;
+    font-weight: 600;
+}

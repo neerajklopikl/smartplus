@@ -1,0 +1,9 @@
+/* src/App.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.app-container {
+  background-color: #f1f3f6; /* Light grey background */
+}
